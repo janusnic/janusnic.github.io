@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link href="/css/app.css" rel="stylesheet">
+</head>
+<body>
+    <header class="page-header mb-3">
+        <label for="toggler-btn"><i class="fas fa-bars"></i></label>
+
+        <a href="#" class="brand">&nbsp;Shopaholic</a> 
+        <input type="checkbox" id="toggler-btn">
+          
+        <nav class="navbar">
+            <a href="/demo/index.html">Home</a>
+            <a href="/demo/catalog.html">Catalog</a>
+            <a href="/demo/blog.html">Blog</a>
+            <a href="/demo/about.html">About</a>
+            <a href="/demo/contact.html">Contact</a>
+            <span class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </span>
+        </nav>
+        <div class="toolbar">
+            
+            
+        
+            <a href="/demo/index.html" class="far fa-heart"><small class="text-gray">(<span id="total-in-wishlist" style="">0</span>)</small></a>
+            <a href="/demo/cart.html" class="fas fa-cart-plus"><small class="text-gray">(<span id="total-in-cart">0</span>)</small></a>
+            <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
+        </div>
+    </header>
+<!-- breadcrumb -->
+    <section class="hero py-5 mt-5 bg-light">
+      <div class="container py-5">
+        <div class="d-flex crumb">
+            <h1 class="h2 text-uppercase mb-0">Blog</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-end mb-0 px-0 bg-light">
+                <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Blog</li>
+              </ol>
+            </nav>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5 mb-3">
+        <div class="container container-blog mb-3">
+        <main>
+            <div class="card card-shadow">
+              <div class="card-header">
+                <img src="images/product-5.jpg" alt="" />
+              </div>
+      
+              <div class="card-body">
+                <h3>Lorem ipsum dolor sit</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  voluptate itaque neque totam quod vitae mollitia beatae blanditiis
+                  saepe quaerat porro, laborum quasi accusamus voluptates consectetur
+                  ipsam tempora, possimus modi.
+                </p>
+                <button class="btn">Details</button>
+                <button class="btn btn-outline">All posts</button>
+              </div>
+            </div>
+            <br />
+            <div class="card card-shadow">
+              <div class="card-header">
+                <img src="images/product-6.jpg" alt="" />
+              </div>
+      
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  voluptate itaque neque totam quod vitae mollitia beatae blanditiis
+                  saepe quaerat porro, laborum quasi accusamus voluptates consectetur
+                  ipsam tempora, possimus modi.
+                </p>
+                <button class="btn">Details</button>
+                <button class="btn btn-outline">All posts</button>
+              </div>
+            </div>
+          </main>
+      
+          <aside class="sidebar">
+            <h2>Sidebar</h2>
+      
+            <div class="card card-shadow">
+              <div class="card-header">
+                <img src="images/product-7.jpg" alt="" />
+              </div>
+      
+              <div class="card-body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                  voluptate itaque neque totam quod vitae mollitia beatae blanditiis
+                  saepe quaerat porro, laborum quasi accusamus voluptates consectetur
+                  ipsam tempora, possimus modi.
+                </p>
+                <button class="btn">Details</button>
+                <button class="btn btn-outline">All posts</button>
+              </div>
+            </div>
+      
+          </aside>
+        </div>
+
+    </section>
+    
+
+    
+    
+   
+    
+    <section id="divider" class="divider bg-fixed bg-cover bg-center py-5" style="background: url(images/divider-bg.jpg);">
+        <div class="container py-5 align-right px-5">
+            <p>New <span>Inspiration</span> 2023</p>
+            <h2>20% off on new season</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <a href="#">Browse collections</a>
+        </div>
+    </section>
+
+    
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+
+                <h4>Social Media</h4>
+                <ul class="link-unstyle">
+                    <li><a href="#" class="social-link"><i class="fab fa-facebook"></i> facebook</a></li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-twitter"></i> twitter</a> </li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-instagram"></i> instagram</a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-google-plus"></i> google</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top pt-4">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p class="small text-muted">Designe by <a class="text-white" href="#">Shopaholic</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+    
+  
+</body>
+</html>

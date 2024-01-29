@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link href="css/app.css" rel="stylesheet">
+	<style type="text/css">
+		
+		main {
+			display: flex;
+		}
+		.gallery {
+			flex: 1;
+			border: 1px solid red;
+			padding: .5rem;
+		}
+		.info {
+			flex: 1;
+			border: 1px solid green;
+			padding: 1rem;
+		}
+		aside {
+			display: flex;
+			border: 1px solid blue;
+			width:100%;
+			height: 5rem;	
+		}
+
+		.related {
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+		    gap: 1.5rem;
+		}
+
+		.gallary-container  {
+			display: grid;
+			gap: .5rem;
+			
+		}
+
+		.info-container {
+			display: grid;
+		}
+
+		.thumb {
+			padding: 0;
+			display: block;
+			width: 100px;
+			margin: 0;
+		} 
+
+		.thumb img {
+			max-width: 100%;
+			object-fit: cover;
+		}
+
+		.thumb1 {
+			grid-column: 1;
+    		grid-row: 1;
+		}
+		.thumb2 {
+			grid-column: 1;
+    		grid-row: 2;
+		}
+		.thumb3 {
+			grid-column: 1;
+    		grid-row: 3;
+		}
+		.thumb4 {
+			grid-column: 1;
+    		grid-row: 4;
+		}
+
+		.big-picure{
+			grid-column: 2 / 5;
+    		grid-row: 1 / 5;
+   		
+		}
+
+		.big-picure .content{
+		  display: none;
+		}
+
+		#thumb1:checked ~ .big-picure .content-1,
+		#thumb2:checked ~ .big-picure .content-2,
+		#thumb3:checked ~ .big-picure .content-3,
+		#thumb4:checked ~ .big-picure .content-4 {
+		  display: block;
+		}
+
+
+		.gallary-container input[type="radio"] {
+			display: none;
+		}
+
+		.content {
+			overflow: hidden;
+			margin: 0;
+    		padding: 0;
+		}
+
+		.big-picure .content img {
+			display: block;
+    		width: 100%;
+  			max-height: 100%;
+			object-fit: cover;
+		}
+
+		.info-header {
+			grid-column: 1 / 3;
+    		grid-row: 1;
+		}
+
+		.info-price {
+			grid-column: 1 ;
+    		grid-row: 2;	
+		}
+
+		.info-shipping {
+			grid-column: 2 / 3;
+    		grid-row: 2;		
+		}
+
+		.info-button {
+			grid-column: 1;
+    		grid-row: 3;
+
+		}
+		.info-qty {
+			grid-column: 2 / 3;
+    		grid-row: 3;
+
+		}
+
+		.info-description {
+			grid-column: 1 / 3;
+    		grid-row: 4;			
+		}
+
+
+
+		@media (max-width: 45rem) {
+       		
+       		main {
+       			flex-wrap: wrap;
+		        flex-direction: row;
+       		}
+		    .gallery, .info {
+		        
+		        flex: auto;
+		        width: 100%;
+		    }
+
+		} 
+
+
+	</style>
+
+</head>
+<body>
+<header class="page-header">
+        <a href="#" class="brand">Shopaholic</a> 
+        <input type="checkbox" id="toggler-btn">
+        <label for="toggler-btn"><i class="fas fa-bars"></i></label>
+        
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="catalog.html">Catalog</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="toolbar">
+            <a href="index.html" class="far fa-heart"></a>
+            <a href="cart.html" class="fas fa-cart-plus"></a>
+            <a href="blog.html" class="far fa-user"></a>
+        </div>
+    </header>
+
+    <section class="hero py-5 mt-5 bg-light">
+      <div class="container py-5">
+        <div class="d-flex crumb">
+            <h1 class="h2 text-uppercase mb-0">Catelog</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-end mb-0 px-0 bg-light">
+                <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Catalog</li>
+              </ol>
+            </nav>
+        </div>
+      </div>
+    </section>
+
+<section>
+	
+	<main class="container">
+
+		<div class="gallery">
+
+			<div class="gallary-container">
+				
+				<input type="radio" name="slider" checked id="thumb1">
+			    <input type="radio" name="slider" id="thumb2">
+			    <input type="radio" name="slider" id="thumb3">
+			    <input type="radio" name="slider" id="thumb4">
+			    
+ 
+				<label for="thumb1" class="thumb thumb1"><img src="images/product-1.jpg"></label>
+				<label for="thumb2" class="thumb thumb2"><img src="images/product-2.jpg"></label>
+				<label for="thumb3" class="thumb thumb3"><img src="images/product-3.jpg"></label>
+				<label for="thumb4" class="thumb thumb4"><img src="images/product-2.jpg"></label>
+
+
+				<div class="big-picure">
+					<div class="content content-1"><img src="images/product-1.jpg"></div>
+					<div class="content content-2"><img src="images/product-2.jpg"></div>
+					<div class="content content-3"><img src="images/product-3.jpg"></div>
+					<div class="content content-4"><img src="images/product-2.jpg"></div>
+				</div>
+
+			</div>
+
+
+			
+		</div>
+
+		<div class="info">
+			<div class="info-container">
+
+				<div class="info-header">
+					Tommy Hilfiger T-Shirt New York
+				</div>
+
+				<div class="info-price">
+					$800.00 
+				</div>
+				<div class="info-shipping">
+					Free shipping
+				</div>
+				
+				<div class="info-button">
+					Add to Cart
+				</div>
+
+				<div class="info-qty">
+					Qty.
+				</div>
+
+				<div class="info-description">
+					Info Brand
+
+					We open source it for you  if you want to use it on your ecommerce. 
+				</div>
+
+			</div>
+			
+		</div>
+
+	</main>
+	
+
+	<section class="container">
+
+        <header class="header">
+            <h2 class="text-center">You might also like</span></h2>
+        </header>
+
+        <div class="product-container">
+            <article class="product">
+
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="images/product-5.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>Product name</h3>
+                    <div class="price">
+                        $123
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <div class="badge text-white bg-sale">Sale</div>
+                    <img src="images/product-5.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>Product name</h3>
+                    <div class="price">
+                        $123
+                    </div>
+                </div>
+            </article>
+
+            <article class="product">
+
+                <div class="icons">
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-eye"></a>
+                </div>
+
+                <div class="image">
+                    <img src="images/product-5.jpg">
+                </div>
+
+                <div class="content">
+                    <h3>Product name</h3>
+                    <div class="price">
+                        $123
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+	<section id="divider" class="divider bg-fixed bg-cover bg-center py-5" style="background: url(images/divider-bg.jpg);">
+        <div class="container py-5 align-right px-5">
+            <p>New <span>Inspiration</span> 2023</p>
+            <h2>20% off on new season</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <a href="#">Browse collections</a>
+        </div>
+    </section>
+
+    
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li class="footer-link">Contact Us</li>
+                    <li class="footer-link">Help</li>
+                    <li class="footer-link">Condition</li>
+                    <li class="footer-link">Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+
+                <h4>Social Media</h4>
+                <ul class="link-unstyle">
+                    <li><a href="#" class="social-link"><i class="fab fa-facebook"></i> facebook</a></li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-twitter"></i> twitter</a> </li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-instagram"></i> instagram</a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-google-plus"></i> google</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top pt-4">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p class="small text-muted">Designe by <a class="text-white" href="#">Shopaholic</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+</section>
+</body>
+</html>

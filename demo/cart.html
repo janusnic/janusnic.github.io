@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link href="/css/app.css" rel="stylesheet">
+</head>
+<body id="cart-page">
+    <header class="page-header mb-3">
+        <label for="toggler-btn"><i class="fas fa-bars"></i></label>
+
+        <a href="#" class="brand">&nbsp;Shopaholic</a> 
+        <input type="checkbox" id="toggler-btn">
+          
+        <nav class="navbar">
+            <a href="/demo/index.html">Home</a>
+            <a href="/demo/catalog.html">Catalog</a>
+            <a href="/demo/blog.html">Blog</a>
+            <a href="/demo/about.html">About</a>
+            <a href="/demo/contact.html">Contact</a>
+            <span class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </span>
+        </nav>
+        <div class="toolbar">
+            
+            
+        
+            <a href="/demo/index.html" class="far fa-heart"><small class="text-gray">(<span id="total-in-wishlist" style="">0</span>)</small></a>
+            <a href="/demo/cart.html" class="fas fa-cart-plus"><small class="text-gray">(<span id="total-in-cart">0</span>)</small></a>
+            <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
+        </div>
+    </header>
+
+    <section class="hero py-5 mt-5 bg-light">
+      <div class="container py-5">
+        <div class="d-flex crumb">
+            <h1 class="h2 text-uppercase mb-0">Shopping Cart</h1>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb justify-content-end mb-0 px-0 bg-light">
+                <li class="breadcrumb-item"><a class="text-dark" href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Shop</li>
+              </ol>
+            </nav>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="py-5 mb-3">
+      <div class="container container-q mb-3">
+        <main class="table-responsive mb-4"> 
+          <table class="table">
+            <thead>
+            <tr class="text-gray-400">
+                <th class="desc" scope="col">Product</th>
+                <th class="price" scope="col">Price</th>
+                <th class="quantity" scope="col">Quantity</th>
+                <th class="total" scope="col">Total</th>
+                <th class="action" scope="col"></th>
+            </tr>
+            </thead>
+
+            
+            <tbody class="shopping-cart-items">
+                 
+            </tbody>
+          </table>
+
+        </main>
+        
+        <aside class="sidebar">
+            <h2>Cart total</h2>
+            <div class="card border-0 rounded-0 p-lg-4 bg-light">
+                <div class="card-body">
+                  <h5 class="text-uppercase mb-4">Cart total</h5>
+                  <ul class="list-unstyled mb-0">
+                    <li class="d-flex align-items-center justify-content-between">
+                      <strong class="text-uppercase small font-weight-bold">Subtotal</strong>
+                      <span class="text-muted small">$<span class="cart-subtotal">250</span></span>
+                    </li>
+                    <li class="d-flex align-items-center justify-content-between">
+                        <strong class="text-uppercase small font-weight-bold">Tax</strong>
+                        <span class="text-muted small">$<span class="cart-tax">2</span></span>
+                      </li>
+                    <li class="border-bottom mb-3"></li>
+                    <li class="d-flex align-items-center justify-content-between mb-3">
+                      <strong class="text-uppercase small font-weight-bold">Total</strong>
+                      <span class="text-muted small">$<span class="cart-total">250</span></span>
+                    </li>
+                    <li>
+                      <form action="#" class="d-block py-2">
+                        <div class="input-group">
+                          <input class="form-control mb-3" type="text" placeholder="Enter your coupon">
+                          <button class="btn btn-send w-100" type="submit"> <i class="fas fa-gift me-2"></i>Apply coupon</button>
+                        </div>
+                      </form>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+
+        </aside>
+      </div>
+
+    </section>
+    
+
+    
+    
+   
+    
+    <section id="divider" class="divider bg-fixed bg-cover bg-center py-5" style="background: url(images/divider-bg.jpg);">
+        <div class="container py-5 align-right px-5">
+            <p>New <span>Inspiration</span> 2023</p>
+            <h2>20% off on new season</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <a href="#">Browse collections</a>
+        </div>
+    </section>
+
+    
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+
+                <h4>Social Media</h4>
+                <ul class="link-unstyle">
+                    <li><a href="#" class="social-link"><i class="fab fa-facebook"></i> facebook</a></li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-twitter"></i> twitter</a> </li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-instagram"></i> instagram</a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-google-plus"></i> google</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top pt-4">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p class="small text-muted">Designe by <a class="text-white" href="#">Shopaholic</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<script src="js/db.js"></script>
+<script type="module" src="js/app.js"></script>
+  
+</body>
+</html>

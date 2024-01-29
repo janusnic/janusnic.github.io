@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link href="/css/app.css" rel="stylesheet">
+
+    
+</head>
+<body>
+  <div class="d-none">
+    <svg width="0" height="0" class="hidden">
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="envelope-1" fill="none" stroke="#202020" stroke-miterlimit="10"  stroke-linejoin="round" stroke-linecap="round">
+        <title>Envelope</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path d="M2 12l30 27.4L62 12"></path>
+        <path d="M2 12h60v40H2z"></path>
+      </symbol>
+
+      <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="helpline-24h-1" fill="none" stroke="#202020" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+        <title>Helpline 24h</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z"></path>
+        <path d="M54 2l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2A6 6 0 0 0 32 3.6"></path>
+      </symbol>
+
+      <symbol viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" id="map-marker-1" stroke-miterlimit="10" stroke="#202020" fill="none"  stroke-linejoin="round" stroke-linecap="round">
+        <title>Map Marker</title>
+        <desc>A line styled icon from Orion Icon Library.</desc>
+        <path d="M43.2 48.1l-7.2-4L18 52 2 44.1V4l16 7.9L36 3l18 8.9v20.3M36 44.1V3M18 52V11.9"></path>
+        <path d="M52 32a10 10 0 0 0-10 10c0 9 10 19 10 19s10-10 10-19a10 10 0 0 0-10-10z"></path>
+        <circle r="3" cy="42" cx="52"></circle>
+      </symbol>
+
+    </svg>
+  </div>
+  <header class="page-header mb-3">
+        <label for="toggler-btn"><i class="fas fa-bars"></i></label>
+
+        <a href="#" class="brand">&nbsp;Shopaholic</a> 
+        <input type="checkbox" id="toggler-btn">
+          
+        <nav class="navbar">
+            <a href="/demo/index.html">Home</a>
+            <a href="/demo/catalog.html">Catalog</a>
+            <a href="/demo/blog.html">Blog</a>
+            <a href="/demo/about.html">About</a>
+            <a href="/demo/contact.html">Contact</a>
+            <span class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </span>
+        </nav>
+        <div class="toolbar">
+            
+            
+        
+            <a href="/demo/index.html" class="far fa-heart"><small class="text-gray">(<span id="total-in-wishlist" style="">0</span>)</small></a>
+            <a href="/demo/cart.html" class="fas fa-cart-plus"><small class="text-gray">(<span id="total-in-cart">0</span>)</small></a>
+            <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
+        </div>
+    </header>
+
+<breadcrumb-component title="Contact Us" page_title="Contact"></breadcrumb-component>
+<!-- grid test -->
+
+    <section class="container py-5">
+        
+        <div class="contact-wrapper py-5 mt-5">
+
+          <header class="contact-header mb-5">
+            <h2>Contact us</h2>
+          </header>
+          
+          <div class="contact-main">
+            <form class="form" id="contact-form" method="post" action="">
+                <div class="row py-3">
+                  <div class="col-sm-6">
+                    <label class="form-label" for="name">Your firstname *</label>
+                    <input class="form-control" type="text" name="name" id="name" placeholder="Enter your firstname" required="required">
+                  </div>
+                  <div class="col-sm-6">
+                    <label class="form-label" for="surname">Your lastname *</label>
+                    <input class="form-control" type="text" name="surname" id="surname" placeholder="Enter your  lastname" required="required">
+                  </div>
+                  <div class="col-sm-12">
+                    <label class="form-label" for="email">Your email *</label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="Enter your  email" required="required">
+                  </div>
+                  <div class="col-sm-12">
+                    <label class="form-label" for="message">Your message for us *</label>
+                    <textarea class="rounded form-control" rows="4" name="message" id="message" placeholder="Enter your message" required="required"></textarea>
+                  </div>
+                  <div class="col-sm-12">
+                    <button class="btn btn-send" type="submit">Send message</button>
+                  </div>
+                </div>
+              </form>
+          </div>
+        
+          <div class="contact-sidebar">
+
+            <div class="address">
+              <h3><svg class="svg-icon mb-4 text-primary svg-icon-light">
+                <use xlink:href="#map-marker-1"> </use>
+              </svg> Address</h3>
+
+              <p>13/25 New Avenue<br>New Heaven, 45Y 73J<br><strong>Ukraine</strong></p>
+            
+            </div>
+
+          </div>
+          
+          <div class="contact-footer">
+            
+          </div>
+          <div class="contact-footer">
+            
+          </div>
+        </div>
+      </section>
+   
+       
+        
+<footer class="bg-dark text-white py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h4>Services</h4>
+                <ul class="link-unstyle">
+                    <li>Contact Us</li>
+                    <li>Help</li>
+                    <li>Condition</li>
+                    <li>Term</li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+
+                <h4>Social Media</h4>
+                <ul class="link-unstyle">
+                    <li><a href="#" class="social-link"><i class="fab fa-facebook"></i> facebook</a></li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-twitter"></i> twitter</a> </li>
+                    <li><a href="#"  class="social-link"><i class="fab fa-instagram"></i> instagram</a></li>
+                    <li><a href="#" class="social-link"><i class="fab fa-google-plus"></i> google</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-top pt-4">
+            <div class="row">
+                <div class="col-lg-6 text-start">
+                    <p class="small text-muted">&copy; 2023 All right reserved.</p>
+                </div>
+                <div class="col-lg-6 text-end">
+                    <p class="small text-muted">Designe by <a class="text-white" href="#">Shopaholic</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+
+<script src="/js/contact.js"></script>
+<script  type="module" src="/js/app.js"></script>
+        
+</body>
+</html>

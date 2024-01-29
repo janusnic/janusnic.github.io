@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <link href="/css/app.css" rel="stylesheet">
+</head>
+<body>
+   
+    <header class="page-header mb-3">
+        <label for="toggler-btn"><i class="fas fa-bars"></i></label>
+
+        <a href="#" class="brand">&nbsp;Shopaholic</a> 
+        <input type="checkbox" id="toggler-btn">
+          
+        <nav class="navbar">
+            <a href="/demo/index.html">Home</a>
+            <a href="/demo/catalog.html">Catalog</a>
+            <a href="/demo/blog.html">Blog</a>
+            <a href="/demo/about.html">About</a>
+            <a href="/demo/contact.html">Contact</a>
+            <span class="search-box">
+            <button class="btn-search"><i class="fas fa-search"></i></button>
+            <input type="text" class="input-search" placeholder="Type to Search...">
+          </span>
+        </nav>
+        <div class="toolbar">
+            
+            
+        
+            <a href="/demo/index.html" class="far fa-heart"><small class="text-gray">(<span id="total-in-wishlist" style="">0</span>)</small></a>
+            <a href="/demo/cart.html" class="fas fa-cart-plus"><small class="text-gray">(<span id="total-in-cart">0</span>)</small></a>
+            <a href="#!" onclick="window.login.showModal();" class="far fa-user"></a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero bg-hero bg-cover bg-center py-5 mb-3" style="background: url(/images/bg-banner.jpg);">
+        <div class="container py-5 align-left px-5 mb-3">
+            <p>New <span>Inspiration</span> 2023</p>
+            <h2>20% off on new season</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <a href="#" class="btn btn-primary">Browse collections</a>
+        </div>
+    </section>
+
+
+    <!-- CATEGORIES SECTION-->
+    <section class="py-5">
+      <div class="container">
+
+        <header class="text-center">
+          <p class="text-muted text-uppercase mb-1">Carefully created collections</p>
+          <h2 class="h5 text-uppercase mb-4">Browse our categories</h2>
+        </header>
+
+        <carousel-component url = 'https://my-json-server.typicode.com/couchjanus/db' site_url="https://couchjanus.github.io"></carousel-component>
+
+      </div>
+    </section>
+
+
+    <section id="catalog" class="catalog container mb-3">
+
+        <header class="header py-5">
+            <h2 class="text-center">Our <span>Products</span></h2>
+        </header>
+
+        <div class="product-container">
+           
+        </div>
+
+    </section>
+
+
+    <service-component></service-component>
+    
+   
+    
+    <section id="divider" class="divider bg-fixed bg-cover bg-center py-5" style="background: url(images/divider-bg.jpg);">
+        <div class="container py-5 align-right px-5">
+            <p>New <span>Inspiration</span> 2023</p>
+            <h2>20% off on new season</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+            <a href="#">Browse collections</a>
+        </div>
+    </section>
+
+    <footer-component></footer-component>
+
+<div class="modal-window"></div>
+
+    <!-- dialog -->
+
+  <dialog id="login">
+
+      <a href="#!" onclick="window.login.close();" title="Close" class="close fas fa-times"></a>
+    
+
+    
+    <div class="login-container">
+    <div class="col-left">
+      <div class="login-text">
+        <h2>Welcome Back</h2>
+        <p>Create your account.<br>It's totally free.</p>
+        <a class="btn" href="">Sign Up</a>
+      </div>
+    </div>
+
+    <div class="col-right">
+      <div class="login-form">
+        <h2>Login</h2>
+        <form>
+          <p>
+            <label>Username or email address<span>*</span></label>
+            <input type="text" placeholder="Username or Email" required>
+          </p>
+          <p>
+            <label>Password<span>*</span></label>
+            <input type="password" placeholder="Password" required>
+          </p>
+          <p>
+            <input type="submit" value="Sing In" />
+          </p>
+          <p>
+            <a href="">Forget Password?</a>
+          </p>
+        </form>
+
+      </div>
+    </div>
+  </div>
+      
+  </dialog>
+
+  <!-- <script src="js/db.js"></script> -->
+  <script  type="module" src="/js/app.js"></script>
+</body>
+</html>
