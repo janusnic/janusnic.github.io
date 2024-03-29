@@ -1,10 +1,10 @@
 /* main.css */
 
-html {
+/* html {
     --base-color: #130f40;
     --active-color: salmon;
     --ancor-color: #130f40;
-}
+} */
 
 body {
     color: var(--base-color);

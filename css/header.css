@@ -1,0 +1,14 @@
+/* hero */
+
+.hero {
+    /* background-color: beige; */
+    /* background-color: rgba(161, 161, 170, 0.1); */
+    background-color: rgb(161 161 170 / 0.1);
+}
+
+
+.hero h1 {
+    /* font-size: 1.5em; */
+    /* font-size: calc(1.345rem + 1.15vw); */
+    font-weight: 700;
+}

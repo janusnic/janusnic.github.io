@@ -1,0 +1,6 @@
+/* catalog */
+
+h2>span, p>span {
+    color: salmon;
+    font-weight: 600;
+}

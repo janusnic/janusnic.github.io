@@ -1,0 +1,78 @@
+/* nav */
+
+#toggler {
+    display: none;
+}
+.page-header {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 7%;
+    /* brand */
+    > .brand {
+        color: var(--anchor-active-color);
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+    > .navbar {
+        position: absolute;
+        top: 99.9%;
+        left: 0;
+        right: 0;
+        background-color: white;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+        > a {
+            font-size: 1.1rem;
+            margin-right: .5rem;
+            color: var(--anchor-color);
+            display: block;
+        }
+        > a:hover {
+            color: var(--anchor-active-color);
+            text-decoration: underline;
+        }
+
+        
+    }
+    #toggler:checked ~ nav.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+
+    }
+    > .toolbar {
+        > a {
+            font-size: 1.1rem;
+            color: var(--anchor-color);
+        }
+        > a:hover {
+            color: var(--anchor-active-color);
+        }
+        > a:active {
+            color: blueviolet;
+        }
+    }
+}
+
+@media (min-width: 40rem) {
+
+    .page-header {
+        & .navbar {
+            position: relative;
+            clip-path: unset;
+        }
+        & .navbar > a {
+            display: inline-block;
+        }
+    }
+    .page-header label {
+        display: none;
+    }
+}
+
+

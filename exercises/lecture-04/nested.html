@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    .not-nesting {
+        color: red;
+    }
+
+    .not-nesting > .is {
+        color: purple;
+    }
+
+    .not-nesting > .is > .awesome {
+        color: green;
+    }
+
+    .nesting {
+        color: hotpink;
+
+        > .is {
+            color: rebeccapurple;
+
+            > .awesome {
+            color: deeppink;
+            }
+        }
+    }
+
+       
+    </style>
+</head>
+<body>
+    
+
+вкладені селектори
+без використання вкладення кожен селектор потрібно явно оголосити окремо один від одного. Це призводить до повторення та збільшення розміру таблиць стилів.
+
+<div class="not-nesting">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <div class="is">
+        Quis sunt mollitia vel. Amet consectetur aliquid nisi minus recusandae vero reprehenderit unde cumque molestiae soluta. 
+        <div class="awesome">
+            Deleniti exercitationem nisi qui quia deserunt.
+        </div>
+    </div>
+</div>
+
+
+За допомогою вкладення правила стилю селекторів можна згрупувати.
+
+After
+
+<div class="nesting">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+    <div class="is">
+        Quis sunt mollitia vel. Amet consectetur aliquid nisi minus recusandae vero reprehenderit unde cumque molestiae soluta. 
+        <div class="awesome">
+            Deleniti exercitationem nisi qui quia deserunt.
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

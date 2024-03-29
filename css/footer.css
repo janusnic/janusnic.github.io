@@ -1,0 +1,64 @@
+/* footer */
+
+/* Footer page-footer */
+
+footer.page-footer {
+    width: 100%;
+    background-color: #555;
+    color: #bbb;
+    /* line-height: 1.5; */
+}
+
+footer.page-footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer.page-footer a {
+    text-decoration: none;
+    color: #eee;
+    font-size: .85rem;
+}
+footer.page-footer {
+    /* Footer main */
+    .footer-main {
+        padding: 1.25rem 1.875rem;
+        display: flex;
+        flex-wrap: wrap;
+
+        .footer-main-item {
+            padding: 1.25rem;
+            min-width: 12.5rem;
+            
+            .footer-title {
+                color: #fff;
+                font-size: 1.375rem;
+                padding-bottom: 0.625rem;
+            }
+        }
+        /* Footer main | Newsletter form */
+    }
+    /* Footer legal */
+    .footer-legal {
+        padding: 0.9375rem 1.875rem;
+        background-color: #333;
+        .footer-legal-list {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            /* one before the last child */
+            li {
+                margin: 0.125rem 0.625rem;
+                white-space: nowrap;
+            }
+            /* one before the last child */
+            li:nth-last-child(2) {
+                flex: 1;
+            }
+        }
+        
+    }
+}
+ 
+/* Footer social */
+

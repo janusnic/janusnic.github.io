@@ -1,1 +1,8 @@
 /* a persistent style sheet */
+/* https://cdnjs.com/libraries/normalize */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+html {
+    --base-color: #130f40;
+    --active-color: salmon;
+    --ancor-color: #130f40;
+}

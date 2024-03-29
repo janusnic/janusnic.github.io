@@ -1,0 +1,53 @@
+/* nav */
+.page-header {
+    background: #fff;
+}
+  
+.page-header a.brand {
+    color: var(--anchor-active-color);
+}
+
+.page-header .navbar > a{
+    font-size: 1.1rem;
+    color: var(--anchor-color);
+}
+
+/* breadcrumb */
+.breadcrumb-bg-light {
+    /* background-color: rgba(161, 161, 170, 0.1); */
+    background-color: rgb(161 161 170 / 0.1);
+}
+
+/* .breadcrumb-container {
+
+}
+
+.breadcrumb-title {
+
+}
+
+.breadcrumb {
+
+}
+
+.breadcrumb-item {
+
+}
+
+.breadcrumb-item .active {
+
+} */
+
+.breadcrumb-container {
+    > .breadcrumb-title {
+        font-size: 1.3rem;
+    }
+    > .breadcrumb {
+        > .breadcrumb-item {
+            color: indigo;
+        }
+        > .breadcrumb-item.active {
+            color: red;
+        }
+    }    
+}
