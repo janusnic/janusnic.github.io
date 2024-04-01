@@ -1,0 +1,143 @@
+
+@media (min-width:42rem) {
+    .cart-container {
+        display: grid;
+        gap:1em;
+        grid-template-columns: auto 15rem;
+    }  
+}
+
+
+.cart-main {
+    width: 100%;
+    margin: 0 auto;
+
+    & .header {
+        font-weight: 600;
+        color: white;
+        background-color: salmon;
+    }
+
+    .table {
+        display: block;
+    }
+    
+    .row {
+        display: block;
+        padding: 0.8em 0 .4em;
+    }
+
+    .row:nth-of-type(even) {
+        background-color: rgb(0 0 0 / .1);
+    }
+
+    .cell {
+        padding: 2px 1rem;
+        display: block;
+        margin-bottom: .8em;
+    }
+
+    @media (min-width:42rem) {
+        .table {
+            margin: 0 0 2.2rem 0;
+            width: 100%;
+            box-shadow: 0 1px 3px rgb(0 0 0 / .2);
+            display: table;
+        }
+
+        .row {
+            display: table-row;
+        }
+        .cell {
+            display: table-cell;
+            padding: 6px 12px;
+        }
+
+    }
+
+}
+
+.cart-sidebar {
+    border: 1px dotted goldenrod;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    border: #ced4da 1px dotted;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: 1rem .5rem;
+}
+
+.card-body p {
+    font-size: clamp(.9rem, .5cqi + 1rem, 1.5rem);
+}
+
+.card-body h3 {
+    font-size: clamp(1.25rem, 3cqi + 1rem, 2.5rem);
+}
+
+.card-header {
+    max-width: 500px;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+
+
+
+@container sidebar (max-width: 45rem) {
+  .card {
+    flex-direction: column;
+  }
+
+  .card-header {
+    width: 100%;
+  }
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+}
+.form-control {
+    display: block;
+    width: 90%;
+    padding: .375rem .25rem;
+    background-color: white;
+    border: 1px solid lightgrey;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-group div {
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.form-control:focus {
+    border-color: antiquewhite;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(220 177 74 / .25);
+}
+
+.form-control::placeholder {
+    color: gainsboro;
+    opacity: 1;
+}
+
+.price{
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--anchor-active-color);
+}
+.price::before {
+    color: var(--anchor-active-color);
+    content: var(--currency-symbol);
+}

@@ -3,94 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
+    <title><h1>My Site</h1></title>
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
+    <svg width="0" height="0" hidden>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="delivery-time" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M62 46v-5l-8-7h-8"/>
+            <circle cx="24" cy="54" r="4"/>
+            <circle cx="54" cy="54" r="4"/>
+            <path d="M50 54H28m-8 0h-4v-8h46v8h-4M24.5 24H46v22m-30 0V29.8M2 38h6m-2 8h2"/>
+            <circle cx="14" cy="18" r="12"/>
+            <path d="M14 12v8h6"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="helpline-24h" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M52.3 48.8c1.2.8 3 1.9 2.7 4.3S51 62 43 62s-17.7-6.3-26.2-14.8S2 28.9 2 21 9 9.3 10.9 9s3.6 1.5 4.3 2.7l6 9.2a4.3 4.3 0 0 1-1.1 5.8c-2.6 2.1-6.8 4.6 2.9 14.3s12.3 5.4 14.3 2.9a4.3 4.3 0 0 1 5.8-1.1z"/>
+            <path d="M54 2l-6 14h14m-4-6v12m-14 0H32l8.5-10v-.2A6 6 0 0 0 32 3.6"/>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="label-tag" fill="none" stroke-miterlimit="10" stroke-linejoin="round" stroke-linecap="round">
+            <path d="M25.6 61L3 38.4 38.4 3l21.2 1.4L61 25.6 25.6 61z"/>
+            <circle cx="48" cy="15" r="4"/>
+            <path d="M31.3 21.4l11.3 11.3m-22.6 0l8.5 8.5M25.6 27l5.7 5.7"/>
+  </symbol>
+ 
+    </svg>
     <!-- page header -->
-    <header class="page-header">
+    <header class="page-header mb-3">
         <!-- brand -->
-        <a href="#!" class="brand">&nbsp;Shopaholic</a>
+        <a href="/index.html" class="brand">Shopaholic</a>
+        <label for="toggler">&nbsp;<i class="fas fa-bars"></i>&nbsp;</label>
+        <input type="checkbox" id="toggler">
         <!-- navigation -->
-        <nav class="navbar" id="navbar">
+        <nav class="navbar">
             <a href="/index.html">Home</a>
             <a href="/catalog.html">Catalog</a>
-            <a href="/blog.html">Blog</a>
+            <a href="./blog.html">Blog</a>
             <a href="/about.html">About</a>
-            <a href="/contact.html">Contact</a>
-            
+            <a href="/contact.html">Contact</a>    
+        </nav>
+
+        <nav class="toolbar">
+            <a href="#" class="far fa-heart"></a>
+            <a href="/cart.html" class="fas fa-dolly-flatbed">(<span id="cart-amount">0</span>)</a>
+            <a href="#" class="far fa-user"></a>
         </nav>
     </header>
 
     <!-- hero -->
-    <section id="hero" class="hero">
-        <div class="container">
+    <section id="hero" class="hero mt-5 mb-3">
+        <div class="container py-5 px-4 ">
             <p>New Inspiration 2024</p>
-            <h1>15% offon new season!</h1> 
+            <h1 class="mb-3">15% off on new season!</h1> 
             <a href="#!" class="btn">Browse Collection</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <header class="text-center">
+                <p class="text-uppercase mb-1">Carefully created collections</p>
+                <h2>Browse our categories</h2>
+            </header>
+            <div class="carousel">
+                <div class="slider">
+                    <div class="slide-track">
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-1.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-2.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-3.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-4.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-5.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-6.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-7.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-1.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-2.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-3.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-4.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-5.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-6.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                        <div class="slide carousel-item">
+                            <a class="category-item" href="#!">
+                                <img src="/images/product-7.jpg" alt="text" width="250" height="100">
+                                <strong class="category-item-title">Category 1</strong>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     
     <!-- main content -->
-    <main>
-        <div class="container">
+    <main class="mb-3">
+        <div class="container px-4 bm-3">
             <header>
                 <h2>Our <span>products</span></h2>
             </header>
-           
-            <article>
-                
-            </article>
-           
+           <div class="product-container"></div>
         </div>
     </main>
     <!-- divider -->
-    <section id="divider"></section>
-    <!-- services -->
-    <section id="services"></section>
-    <!-- page footer -->
-    <footer class="page-footer">
-        <div class="container">
-            <section class="footer-main">
-                <div class="footer-main-item">
-                    <h3 class="footer-title">About</h3>
-                    <ul>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Profiles</a></li>
-                        <li><a href="">Priceas</a></li>
-                        <li><a href="">Customers</a></li>
-                        <li><a href="./exercises/index.html">Exercises</a></li>
-                    </ul>
-                </div>
-                <div class="footer-main-item">
-                    <h3 class="footer-title">Resources</h3>
-                    <ul>
-                      <li><a href="#">Docs</a></li>
-                      <li><a href="#">Blog</a></li>
-                      <li><a href="#">eBooks</a></li>
-                      <li><a href="#">Webinars</a></li>
-                    </ul>
-                </div>
-                <div class="footer-main-item">
-                    <h3 class="footer-title">Contact</h3>
-                    <ul>
-                      <li><a href="#">Help</a></li>
-                      <li><a href="#">Sales</a></li>
-                      <li><a href="#">Advertise</a></li>
-                    </ul>
-                </div>
-            </section>
-           
-            <!-- Footer legal -->
-            <section class="footer-legal">
-                <ul class="footer-legal-list">
-                <li><a href="#">Terms &amp; Conditions</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li>&copy; 2024 Copyright Shopaholic Inc.</li>
-                </ul>
-            </section>
+    <section id="divider" class="divider py-5 mb-3">
+        <div class="container text-right px-4">
+            <p>New Inspiration 2024</p>
+            <h1 class="mb-3">15% off on new season!</h1> 
+            <a href="#!" class="btn-red-gradient">Browse Collection</a>
         </div>
-    </footer>
+    </section>
+    
+    <!-- services -->
+    <section id="services mb-3">
+        
+            <div class="flex-container py-3 text-center">
+                <div class="svg-icon d-inline-block">
+                    <svg class="svg-icon-item">
+                        <use xlink:href="#delivery-time"></use>
+                    </svg>
+                    <div class="text-start">
+                        <h3>Free shipping</h3>
+                        <p>Free shipping worldwide.</p>
+                    </div>
+                </div>
+                <div class="svg-icon d-inline-block">
+                    <svg class="svg-icon-item">
+                        <use xlink:href="#helpline-24h"></use>
+                    </svg>
+                    <div class="text-start">
+                        <h3>Free shipping</h3>
+                        <p>Free shipping worldwide.</p>
+                    </div>
+                </div>
+                <div class="svg-icon d-inline-block">
+                    <svg class="svg-icon-item">
+                        <use xlink:href="#label-tag"></use>
+                    </svg>
+                    <div class="text-start">
+                        <h3>Free shipping</h3>
+                        <p>Free shipping worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        
+    </section>
+    <hr>
+
+    <!-- page footer -->
+    <dialog id="details">
+      <a href="#!" title="Close" class="close fas fa-times"></a>
+      <span class="dialog-main"></span>
+    </dialog>
+    
+    <script src="/js/db.js"></script>
+    <script src="/js/app.js"></script>
+
 </body>
 </html>

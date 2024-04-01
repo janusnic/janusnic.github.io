@@ -1,6 +1,229 @@
 /* catalog */
 
-h2>span, p>span {
-    color: salmon;
-    font-weight: 600;
+main .container h2 > span {
+    color: var(--anchor-active-color);
+}  
+
+main .container h2 {
+   text-transform: uppercase;
+}  
+
+.bg-sale {
+    background-color: red;
+    color: white;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap:.3rem;
+    & .product {
+        overflow: hidden;
+        position: relative;
+        height: 17rem;
+        max-width: 12rem;
+        .icons {
+            position: absolute;
+            top:1rem;
+            right: 1rem;
+            z-index: -1;
+            a{
+                background-color: #fff;
+                color: var(--anchor-color);
+                
+                display: block;
+                margin-top: .5rem;
+                width: 1.5rem;
+                height: 1.5rem;
+                line-height: 1.5rem;
+                text-align: center;
+                
+            }
+
+            a:hover{
+                background-color: var(--anchor-active-color);
+                color: #fff;
+            }
+        }
+        .image {
+
+            .badge {
+                display: inline-block;
+                text-align: center;
+                vertical-align: baseline;
+                font-size: .75rem;
+                padding: .25rem .45rem;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 10;
+            }
+            img {
+                object-fit: cover;
+                max-width: 100%;
+                display: block;
+                height: 15rem;
+                
+            }
+        }
+        .content {
+            padding: .5rem;
+            h3 {
+                padding-bottom: .5rem;
+                text-align: center;
+                font-size: 1rem;
+                position: absolute;
+                bottom: -3rem;
+                left: 0;
+                right: 0;
+                z-index: 10;
+            }
+            .price{
+                font-weight: 500;
+                font-size: .8rem;
+                color: var(--anchor-active-color);
+            }
+            .price::before {
+                color: var(--anchor-active-color);
+                content: var(--currency-symbol);
+            }
+            .price:nth-of-type(1) {
+                float: left;
+                text-decoration: line-through;
+            }
+            .price:nth-of-type(2) {
+                float: right;
+            }
+            .price:empty {
+                display: none;
+            }
+
+        }
+    }
+    .product:hover h3 {
+        bottom: 1.5rem;
+    }
+    .product:hover .icons {
+        z-index: 10;
+    }
+}
+
+
+
+@media (min-width: 35rem) {
+    #catalog {
+        display: grid;
+        gap:1em;
+        grid-template-columns: 15rem auto;
+    }
+}
+
+
+ul.categories a:hover {
+    color: var(--anchor-active-color);
+    text-decoration: underline;
+}
+
+ul.categories li:nth-child(even) {
+    background-color: lightgrey;
+}
+
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.row .col {
+    flex: 1;
+}
+
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: .375rem 2.25rem .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #212529;
+    background-color: #fff;
+    background-image: url("data:image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 16px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 0;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-select:focus {
+    border-color: #eed8a5;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(220, 177, 74, 0.25);
+}
+
+.form-select-lg {
+    padding-top: .6rem;
+    padding-bottom: .6rem;
+    padding-left: 1rem;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+.form-check .form-check-input {
+    float      : left;
+    margin-left: 1.5em
+}
+
+.form-check-input {
+    width                     : 1em;
+    height                    : 1em;
+    margin-top                : .25em;
+    vertical-align            : top;
+    background-color          : #fff;
+    background-repeat         : no-repeat;
+    background-position       : center;
+    background-size           : contain;
+    border                    : 1px solid rgba(0, 0, 0, 0.25);
+    -webkit-appearance        : none;
+    -moz-appearance           : none;
+    appearance                : none;
+    -webkit-print-color-adjust: exact;
+    color-adjust              : exact
+}
+
+.form-check-input[type="checkbox"] {
+    border-radius: .25em
+}
+
+
+.form-check-input:active {
+    -webkit-filter: brightness(90%);
+    filter        : brightness(90%)
+}
+
+.form-check-input:focus {
+    border-color: #a3a8ee;
+    outline     : 0;
+    box-shadow  : 0 0 0 .2rem rgba(70, 80, 221, 0.25)
+}
+
+.form-check-input:checked {
+    background-color: #4650dd;
+    border-color    : #4650dd
+}
+
+.form-check-input:checked[type="checkbox"] {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e")
+}
+
+
+.form-check-input[type="checkbox"]:indeterminate {
+    background-color: #4650dd;
+    border-color    : #4650dd;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e")
 }

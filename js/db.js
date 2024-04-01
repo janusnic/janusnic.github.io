@@ -1,27 +1,3 @@
-const contacts = {
-    address: {
-        icon: 'map-marker-1',
-        title: 'Address',
-        street: '13/25 New Avenue',
-        city: 'New Heaven, ',
-        zip: '45Y 73J',
-        country: 'Ukraine'
-    }, 
-    call_center: {
-        icon: 'helpline-24h-1',
-        title: 'Call center',
-        note: 'This number is toll free if calling from Ukraine.otherwise we advise you to use the electronic form of communication.',
-        phone: '+38 555 444 333',
-    },
-    support: {
-        icon: 'envelope-1',
-        title: 'Electronic support',
-        note: 'Please feel free to write an email to us or to use our electronic ticketing system.',
-        email: 'info@fakeemail.com',
-        warning: 'Ticketio - our ticketing support platform',
-    },
-};
-
 let products = [
 	{
 		id: 1,
@@ -29,9 +5,9 @@ let products = [
 			title: "Sold",
 			bg: "sold"	
 		},
-		image: "https://couchjanus.github.io/images/product-1.jpg",
+		image: "/images/product-1.jpg",
 		name: "Kui Ye Chen’s AirPods",
-		price: 250,
+		price: 21,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 2,
 		category: 1,
@@ -43,9 +19,9 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "https://couchjanus.github.io/images/product-2.jpg",
-		name: "Air Jordan 12 gym red",
-		price: 303,
+		image: "/images/product-2.jpg",
+		name: "Apple wireless keyboard",
+		price: 30,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 5,
 		category: 2,
@@ -56,9 +32,9 @@ let products = [
 			title: "New",
 			bg: "new"	
 		},
-		image: "https://couchjanus.github.io/images/product-3.jpg",
+		image: "/images/product-3.jpg",
 		name: "Cyan cotton t-shirt",
-		price: 25,
+		price: 5,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 4,
 		category:3,
@@ -69,12 +45,12 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "https://couchjanus.github.io/images/product-4.jpg",
+		image: "/images/product-4.jpg",
 		name: "Timex Unisex Originals",
-		price: 151,
+		price: 51,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 1,
-		category: 1,
+		category: 4,
 	},
 	{
 		id: 5,
@@ -82,9 +58,9 @@ let products = [
 			title: "Sale",
 			bg: "sale"	
 		},
-		image: "https://couchjanus.github.io/images/product-5.jpg",
+		image: "/images/product-5.jpg",
 		name: "Red digital smartwatch",
-		price: 150,
+		price: 10,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 0,
 		category: 4,
@@ -96,9 +72,9 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "https://couchjanus.github.io/images/product-6.jpg",
+		image: "/images/product-6.jpg",
 		name: "Nike air max 95",
-		price: 311,
+		price: 31,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 5,
 		category:  5,
@@ -109,8 +85,8 @@ let products = [
 			title: "Sale",
 			bg: "sale"
 		},
-		image: "https://couchjanus.github.io/images/product-7.jpg",
-		name: "Joemalone Women prefume",
+		image: "/images/product-7.jpg",
+		name: "Joemalone Women perfume",
 		price: 35,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 4,
@@ -123,12 +99,12 @@ let products = [
 			title: "",
 			bg: ""	
 		},
-		image: "https://couchjanus.github.io/images/product-8.jpg",
+		image: "/images/product-8.jpg",
 		name: "Apple Watch",
-		price: 425,
+		price: 25,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 3,
-		category: 4,
+		category: 8,
 	},
                       
 	{
@@ -137,12 +113,12 @@ let products = [
 			title: "Sold",
 			bg: "sold"	
 		},
-		image: "https://couchjanus.github.io/images/product-9.jpg",
-		name: "Men silver Byron Watch",
-		price: 551,
+		image: "/images/product-9.jpg",
+		name: "Black Canon EOS camera",
+		price: 24,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 5,
-		category: 4,
+		category: 12,
 	},
                    
 	{
@@ -151,12 +127,12 @@ let products = [
 			title: "New",
 			bg: "new"	
 		},
-		image: "https://couchjanus.github.io/images/product-10.jpg",
-		name: "Ploaroid one step camera",
-		price: 166,
+		image: "/images/product-10.jpg",
+		name: "Silver black round Ipod",
+		price: 16,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 0,
-		category: 1,
+		category: 10,
 	},
 	{
 		id: 11,
@@ -164,12 +140,12 @@ let products = [
 			title: "Sale",
 			bg: "sale"	
 		},
-		image: "https://couchjanus.github.io/images/product-11.jpg",
-		name: "Gray Nike running shoes",
-		price: 123,
+		image: "/images/product-11.jpg",
+		name: "Digital smartwatch",
+		price: 13,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 5,
-		category: 5,
+		category: 11,
 	},
 
 	{
@@ -178,95 +154,105 @@ let products = [
 			title: "New",
 			bg: "new"	
 		},
-		image: "https://couchjanus.github.io/images/product-12.jpg",
-		name: "Black DSLR lense",
-		price: 100,
+		image: "/images/product-12.jpg",
+		name: "Black camera lens",
+		price: 11,
 		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
 		stars: 2,
-		category: 1,
+		category: 9,
 	},
-
+	{
+		id: 13,
+		badge: {
+			title: "Sale",
+			bg: "sale"	
+		},
+		image: "/images/product-11.jpg",
+		name: "Digital smartwatch",
+		price: 13,
+		description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut ullamcorper leo, eget euismod orci. Cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Vestibulum ultricies aliquam convallis.",
+		stars: 5,
+		category: 7,
+	},
 ];
-
-
 
 let categories = [
 	{
 		id: 1,
-		image: "https://couchjanus.github.io/images/product-1.jpg",
+		image: "/images/product-1.jpg",
 		section: "Electronics",
-    name: "Headphones"
+    	name: "Headphone"
 	},
 	{
-    id: 2,
-    name: "Bags",
-		image: "https://couchjanus.github.io/images/product-2.jpg",
-		section: "Health & Beauty",
+    	id: 2,
+    	name: "Keyboard",
+		image: "/images/product-2.jpg",
+		section: "Electronics",
 	},
 	{
 		id: 3,
-		image: "https://couchjanus.github.io/images/product-3.jpg",
+		image: "/images/product-3.jpg",
 		name: "T-Shirts",
-    section: "Fashion & Acc"
+    	section: "Fashion & Acc"
 	},
 	{
 		id: 4,
-		image: "https://couchjanus.github.io/images/product-4.jpg",
-		name: "Smartwatches",
-    section: "Electronics"
+		image: "/images/product-4.jpg",
+		name: "Watches",
+    	section: "Fashion & Acc"
 	},
 	{
 		id: 5,
-		image: "https://couchjanus.github.io/images/product-5.jpg",
+		image: "/images/product-5.jpg",
 		name: "Shoes",
-    section: "Fashion & Acc"
+    	section: "Fashion & Acc"
 	},
 
 	{
 		id: 6,
-		image: "https://couchjanus.github.io/images/product-7.jpg",
-		name: "Parphume",
-    section: "Health & Beauty"
+		image: "/images/product-7.jpg",
+		name: "Perfume",
+    	section: "Health & Beauty"
 	},
 	{
 		id: 7,
-		image: "https://couchjanus.github.io/images/product-9.jpg",
-		name: "Watches",
-    section: "Health & Beauty",
+		image: "/images/product-11.jpg",
+		name: "Smartwatch",
+    	section: "Health & Beauty",
 	},
 
 	{
 		id: 8,
-		image: "https://couchjanus.github.io/images/product-8.jpg",
+		image: "/images/product-8.jpg",
 		name: "Apple Watch",
-    section: "Electronics"
+    	section: "Electronics"
 	},
                       
 	{
 		id: 9,
-		image: "https://couchjanus.github.io/images/product-9.jpg",
-		name: "Byron Watch",
-    section: "Health & Beauty"
+		image: "/images/product-9.jpg",
+		name: "Camera",
+    	section: "Cameras"
 	},
                    
 	{
 		id: 10,
-		image: "https://couchjanus.github.io/images/product-10.jpg",
-		name: "Camera",
-    section: "Electronics"
+		image: "/images/product-10.jpg",
+		name: "Ipod",
+    	section: "Electronics"
 	},
 	{
 		id: 11,
-		image: "https://couchjanus.github.io/images/product-11.jpg",
-		name: "Nike shoes",
-    section: "Fashion & Acc"
+		image: "/images/product-11.jpg",
+		name: "Digital smartwatch",
+    	section: "Fashion & Acc"
 	},
 
 	{
 		id: 12,
-		image: "https://couchjanus.github.io/images/product-12.jpg",
-		name: "DSLR lense",
-    section: "Electronics"
+		image: "/images/product-12.jpg",
+		name: "Lens",
+    	section: "Cameras"
 	},
 
 ];
